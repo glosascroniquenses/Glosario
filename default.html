@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Glosas</title>
+  
+<h1>Navegación</h1>
+<h2>Palabras</h2>
+<a href="{{ site.baseurl }}/palabrasgeneral/">Glosario General</a>
+<h2>Autores</h2>
+{% for autore in site.autores %}
+<a href="{{ autore.url }}">{{ autore.title }}</a>
+{% endfor %}
+</nav>
+</main>
+</html>
