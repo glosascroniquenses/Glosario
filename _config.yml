@@ -2,7 +2,7 @@
 title: "Glosas Croniquenses"
 program: "Programa de Estudios Andinos"
 url: "http://glosas.scholarslab.org"
-baseurl: "https://glosascroniquenses.github.io/glosario"
+baseurl: ""
 
 # Build Settings
 incremental: true
