@@ -15,7 +15,7 @@ body {
 }
 nav ul {
     font-family:'Trebuchet MS', 'Helvetica', 'Sans-Serif';
-    font-size:25px;
+    font-size:45px;
     text-align: center;
  
 }
@@ -30,7 +30,7 @@ footer ul {
 nav ul li {
     display: inline;
     background-color:#D41C62;
-    border-radius:10px;
+    border-radius:5px;
     display: inline-block;
     float: none;
 }
