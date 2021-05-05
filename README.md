@@ -2,7 +2,7 @@
 Esta es la rama que alimenta toda la base de datos de cronistas en el proyecto de glosascroniquenses
 
 _autores: nombre de cronista (título) asociado a data. 
-Datos para armar la web: https://glosascroniquenses.github.io/autores/cronista%%/
+Datos para armar la web: https://glosascroniquenses.github.io/Glosario/autores/cronista%%/
 en la pestaña "Glosario"
 cronista01: Cristóbal de Albornoz
 cronista02: Bartolomé Álvarez
@@ -20,6 +20,7 @@ cronista13: Hernando de Santillán
 cronista14: Pedro Sarmiento de Gamboa
 cronista15: Agustín de Zárate
 cronista16: Martín Enríquez de Almansa
+cronista17: Bartolomé de Segovia
 
 _data: glosario tabulado en archivos csv
 "id_palabra","Palabra","id_cronista","id_texto","cita","pagina"
