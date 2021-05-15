@@ -156,7 +156,7 @@ button{
 }
 
 #palabras-nav {
-   width: 50%;
+   width: 30%;
   font-size: .825rem;
   a,:link {
     display:block;
@@ -166,7 +166,7 @@ button{
 }
 
 #tables {
-  width: 95%;
+  width: 75%;
 
 }
 
