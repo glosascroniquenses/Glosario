@@ -40,12 +40,13 @@ layout: default
 	
 	<tbody>	 
 	{% for row in rows %}
+	<div>{{ row.content[2] }}</div>
 	{% if row.Palabra == word %}
-		<div>{{ row.content[2] }}
+		
 		<tr>
 			<td>{{ row.id_texto }}</td>
 		</tr>
-		</div>
+		
 	{% endif %}
 	{% endfor %}
 	</tbody>
