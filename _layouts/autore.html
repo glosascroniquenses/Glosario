@@ -40,7 +40,7 @@ layout: default
 	
 	<tbody>	 
 		
- 	{% capture unique_word_string %}
+ 	
 	{% for row in rows %}
 	{% capture current_word %}
 	{{ row.Palabra }}
@@ -48,7 +48,7 @@ layout: default
 	{% if current_word == saved_word %}{% else %}{{ row.Palabra }},
 	{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}
 	{% endfor %}
-	{% endcapture %}
+	
 
       
 		
