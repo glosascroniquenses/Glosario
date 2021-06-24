@@ -33,7 +33,7 @@ layout: default
 	<table>
           <thead>
             <tr>
-              <th>id_palabra</th>
+              
 	      <th>id_texto</th>
             </tr>
           </thead>
@@ -41,8 +41,7 @@ layout: default
           {% for row in rows %}
           {% if row.Palabra == word %}
             <tr>
-              <td>{{ row.id_palabra }}</td>
-	      <td valign="bottom">{{ row.id_texto }}</td>		    
+              <td>{{ row.id_texto }}</td>	    
             </tr>
           {% endif %}
           {% endfor %}
