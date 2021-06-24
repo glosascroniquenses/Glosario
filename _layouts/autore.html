@@ -42,7 +42,9 @@ layout: default
 {% for row in rows %}		  
 {% if row.Palabra == word %}
             <tr>
-              <td>{{ row.id_texto }}</td>	    
+              <td>{{ row.id_texto }}</td>
+<table style="{!IF(relatedTo.id_texto == null, 'display: none;', '')}">
+	
             </tr>
 {% endif %}
 {% endfor %}
