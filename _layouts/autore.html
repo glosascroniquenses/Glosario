@@ -30,34 +30,6 @@ layout: default
         <h2>{{ word }}</h2>
 	
 		
-<table>
-		
-<thead>
-	<tr>
-		<th>id_texto</th>
-	</tr>
-</thead>
-	
-	<tbody>	 
-		
- 	 <div id="palabras">
-	{% for row in rows %}
-	{% capture current_word %}
-	{{ row.Palabra }}
-	{% endcapture %}
-	{% assign unique_word_array = unique_word_string | split: ","%}
-	
-
-      
-		
-		<tr>
-			<td>{{ row.id_texto }}</td>
-		</tr>
-	{% endfor %}
-	
-	
-	</tbody>
-</table>
 
 		
 	<table>
