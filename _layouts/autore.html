@@ -39,8 +39,10 @@ layout: default
 </thead>
 	
 	<tbody>	 
-	{% for row in rows %}
-	{% if row.Palabra == word %}
+		
+	<div id="tables">
+        {% for word in unique_word_array %}
+	<section id="{{ word | downcase }}">		
 		
 		<tr>
 			<td>{{ row.id_texto }}</td>
