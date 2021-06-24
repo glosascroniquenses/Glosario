@@ -41,11 +41,13 @@ layout: default
 	<tbody>	 
 	{% for row in rows %}
 	{% if row.Palabra == word %}
-		{for row in rows[:2]}
+		
 		<tr>
+			{for row in rows[:2]}
 			<td>{{ row.id_texto }}</td>
+			{endfor}
 		</tr>	  
-		{endfor}
+		
 	{% endif %}
 	{% endfor %}
 	</tbody>
