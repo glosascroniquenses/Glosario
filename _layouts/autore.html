@@ -32,11 +32,6 @@ layout: default
 		
 <table>
 	
-<rowgroup>
-  <row style="background-color: yellow" span="2">
-</rowgroup>
-	
-
 	
 <thead>
 <tr>
@@ -44,6 +39,7 @@ layout: default
 	<th>id_texto</th>
 </tr>
 </thead>
+	
 <tbody>	  
 {% for row in rows %}
 {% if row.Palabra == word %}
@@ -57,7 +53,7 @@ layout: default
 		  
 {% endif %}
 {% endfor %}
-  
+
       </tbody>
     </table>
 
