@@ -33,6 +33,26 @@ layout: default
 	<table>
           <thead>
             <tr>
+              <th>id_palabra</th>
+	      <th>id_texto</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
+            <tr>
+              <td>{{ row.id_palabra }}</td>
+	      <td valign="bottom">{{ row.id_texto }}</td>		    
+            </tr>
+          {% endif %}
+          {% endfor %}
+      </tbody>
+    </table>
+
+		
+	<table>
+          <thead>
+            <tr>
               <th>Cita</th>
 	      <th>Número de página</th>
             </tr>
@@ -48,7 +68,6 @@ layout: default
           {% endfor %}
       </tbody>
     </table>
-		
    
 		
     </section>
