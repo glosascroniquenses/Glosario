@@ -45,8 +45,6 @@ layout: default
 	{% capture current_word %}
 	{{ row.Palabra }}
 	{% endcapture %}
-	{% if current_word == saved_word %}{% else %}{{ row.Palabra }},
-	{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}
 	{% endfor %}
 	
 
