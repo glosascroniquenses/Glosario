@@ -38,10 +38,13 @@ layout: default
             </tr>
           </thead>
           <tbody>
-
+		  
+		  
+{% if row.Palabra == word %}
             <tr>
               <td>{{ row.id_texto }}</td>	    
             </tr>
+ {% endif %}
   
       </tbody>
     </table>
