@@ -30,22 +30,23 @@ layout: default
         <h2>{{ word }}</h2>
 	
 		
-	<table>
-          <thead>
-            <tr>
+<table>
+<thead>
+<tr>
               
-	      <th>id_texto</th>
-            </tr>
-          </thead>
-          <tbody>
-		  
+	<th>id_texto</th>
+</tr>
+</thead>
+<tbody>	  
 {% for row in rows %}		  
 {% if row.Palabra == word %}
-            <tr>
-              <td>{{ row.id_texto }}</td>
+            
 		  
-
-            </tr>
+<tr>
+	<td>{{ row.id_texto }}</td>
+</tr>
+		  
+		  
 {% endif %}
 {% endfor %}
   
