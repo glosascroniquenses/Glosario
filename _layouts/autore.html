@@ -31,32 +31,25 @@ layout: default
 	
 		
 <table>
-	
-
-	
+		
 <thead>
-<tr>
-              
-	<th>id_texto</th>
-</tr>
+	<tr>
+		<th>id_texto</th>
+	</tr>
 </thead>
 	
-<tbody>	  
-{% for row in rows %}
-{% if row.Palabra == word %}
-            
+	<tbody>	  
+	{% for row in rows %}
+	{% if row.Palabra == word %}
+              
+		<tr>
+			<td>{{ row.id_texto }}</td>
+		</tr>	  
 		  
-	<tr>
-		<td>{{ row.id_texto }}</td>
-	
-	</tr>
-		  
-		  
-{% endif %}
-{% endfor %}
-
-      </tbody>
-    </table>
+	{% endif %}
+	{% endfor %}
+	</tbody>
+</table>
 
 		
 	<table>
