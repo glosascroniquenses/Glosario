@@ -149,15 +149,12 @@ button{
 
 #palabras {
   display:flex;
-
-  h2 {
-    font-size:1.25rem;
-  }
+  width: 50%;
+  font-size:1.25rem;
+  
 }
 
 #palabras-nav {
-   width: 80%;
-  font-size: .825rem;
   a,:link {
     display:block;
     text-decoration:none;
