@@ -123,13 +123,13 @@ button{
 #autores {
   display:block;
   background: hsla(30,25%,50%,.1);
-  width: 35%;
+  width: 25%;
   margin-right: 2em;
   padding: 2em;
   position: absolute;
   right: 0;
   font-family:'Trebuchet MS', 'Helvetica', 'Sans-Serif';
-  font-size: 1.2 rem;
+  font-size: 1.0 rem;
 
   a {
   }
@@ -137,8 +137,6 @@ button{
 
 #palabras {
   font-size:1.25rem;
-  background-color:lightblue;
-  width: 35%;
   
 }
 
