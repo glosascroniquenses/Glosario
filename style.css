@@ -121,22 +121,21 @@ button{
 }
 
 #autores {
-  display:block;
+  right: 0;
+  position: absolute;
   background: hsla(30,25%,50%,.1);
   width: 25%;
   margin-right: 2em;
   padding: 2em;
-  position: absolute;
-  right: 0;
   font-family:'Trebuchet MS', 'Helvetica', 'Sans-Serif';
-  font-size: 1.0 rem;
+  font-size: 1.0rem;
 
   a {
   }
 }
 
 #palabras {
-  font-size:1.25rem;
+
   
 }
 
