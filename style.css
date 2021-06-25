@@ -148,16 +148,15 @@ button{
 }
 
 #palabras {
-  display:flex;
-  width: 50%;
+  display:block;
   font-size:1.25rem;
+  background-color:lightblue;
+  width: 40%;
   
 }
 
 #palabras-nav {
   a,:link {
-    display:block;
-    text-decoration:none;
     color: #800;
   }
 }
