@@ -122,9 +122,8 @@ button{
 
 #autores {
   right: 0;
-  position: absolute;
+  width: 10%;
   background: hsla(30,25%,50%,.1);
-  width: 20%;
   margin-right: 2em;
   padding: 2em;
   font-family:'Trebuchet MS', 'Helvetica', 'Sans-Serif';
