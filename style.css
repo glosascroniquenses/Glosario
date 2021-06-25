@@ -123,7 +123,7 @@ button{
 #autores {
   display:block;
   background: hsla(30,25%,50%,.1);
-  width: 55%;
+  width: 35%;
   margin-right: 2em;
   padding: 2em;
   position: absolute;
@@ -138,7 +138,7 @@ button{
 #palabras {
   font-size:1.25rem;
   background-color:lightblue;
-  width: 55%;
+  width: 35%;
   
 }
 
