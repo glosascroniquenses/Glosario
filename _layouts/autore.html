@@ -10,7 +10,7 @@ layout: default
 
     {% if page.data %}
 	
-    <div id="palabras">
+<div id="palabras">
 	    
       {% assign rows = site.data[page.data] %}
 
@@ -23,8 +23,9 @@ layout: default
 	      </br>
       {% endfor %}
       </nav>
+</div>
 	    
-      <div id="tables">
+<div id="tables">
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
         <h2>{{ word }}</h2>
@@ -54,7 +55,7 @@ layout: default
 		
     </section>
     {% endfor %}
-    </div>
+    
 </div>
 	
     {% endif %}
