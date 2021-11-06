@@ -45,7 +45,7 @@
 3015,"coca",3,"T3044","Tienen chácaras de coca, de algodón y de ají…",177
 3015,"coca",3,"T3045","Las chácaras de coca que ahora tienen los indios eran todas del Inga…",177
 3015,"coca",3,"T3046","… van de los pueblos las personas que son menester, conforme a la cantidad de la coca…",177
-3016,"coca ",3,"T3047","Las chácaras de coca desta provincia…",177
+3016,"coca",3,"T3047","Las chácaras de coca desta provincia…",177
 3017,"cuenta",3,"T3048","… a tomar cuenta a cada cacique de los indios que le eran encargados, y de los depósitos y tributos del Inga, y ver qué cuenta y razón había en todo…",178
 3018,"curacas",3,"T3049","… porque estos caciques, que estos indios llaman curacas que quiere decir mayores…",177-178
 3019,"Cuzco",3,"T3050","… sirven los indios en términos del Cuzco…",176
@@ -58,7 +58,7 @@
 3021,"gobernador",3,"T3057","Ninguno era osado de mentir sobre esto ni sobre otra cosa, como le fuese preguntado por el gobernador, so pena de muerte.",179
 3021,"gobernador",3,"T3058","Cualquier delito que acontecía, en habiendo noticia dél, [el] gobernador o el teniente, hacían parecer ante sí al delincuente…",179
 3021,"gobernador",3,"T3059","… enviaba el gobernador a informarse de su cacique…",179
-3022,"gobernador ",3,"T3060","… y cuando se ofrecía cosa de más calidad, daba aviso dello al gobernador y enviábale la información de palabra de lo que pasaba…",178
+3022,"gobernador",3,"T3060","… y cuando se ofrecía cosa de más calidad, daba aviso dello al gobernador y enviábale la información de palabra de lo que pasaba…",178
 3023,"guacas",3,"T3061","Y dello [de todo el ganado] dio cierta parte para el sol y otra para ciertas guacas y mamaconas…",177
 3024,"Guainacaba",3,"T3062","El  camino real que llaman de Guainacaba, que es partiendo de Quito por la sierra para ir al Cuzco y Charcas…",177
 3025,"Guamanga",3,"T3063","Relación general de la disposición y calidad de la provincia de Guamanga, llamada San Joan de la Frontera…",176
@@ -88,7 +88,7 @@
 3026,"Inga",3,"T3087","Donde había minas de oro o de plata, andaban indios en ellas sacando para el Inga, y los que hacían esto no daban otro tributo ni servicio…",179
 3026,"Inga",3,"T3088","Por do quiera que pasaba el Inga o sus capitanes, les daban todo el servicio…",179
 3026,"Inga",3,"T3089","… subcedieron los caciques en todas las cosas susodichas que solían dar al Inga…",180
-3027,"Inga ",3,"T3090","El tributo que daban al Inga en todo el reino…",179
+3027,"Inga",3,"T3090","El tributo que daban al Inga en todo el reino…",179
 3028,"Ingas",3,"T3091","… en Los Llanos; es tierra mal sana para los indios serranos; no viven en ellos sino Ingas mitimaes y de otras naciones naturales de tierra caliente…",176
 3029,"mamaconas",3,"T3092","Y dello [de todo el ganado] dio cierta parte para el sol y otra para ciertas guacas y mamaconas…",177
 3030,"micho",3,"T3093","Tenía [el tukuyrikuq] puestos en cada pueblo principal y lo a él subjeto, un teniente; a éste llamaban micho…",178
@@ -100,7 +100,7 @@
 3034,"principales",3,"T3099","Todos los hijos de los caciques y señores principales, en seyendo de edad de catorce o quince años, iban a servir al Inga…",178
 3034,"principales",3,"T3100","… y de allí primeramente daba mujeres a los caciques y principales que no las tenían o tenían nescesidad de más…",178
 3034,"principales",3,"T3101","… habiendo fecho llamamiento general de todos los caciques y principales desta dicha provincia…",180
-3035,"principales ",3,"T3102","… y en ellas [las cortes] se hallaron todos los caciques y señores principales de todo lo conquistado…",177
+3035,"principales",3,"T3102","… y en ellas [las cortes] se hallaron todos los caciques y señores principales de todo lo conquistado…",177
 3036,"provincia",3,"T3103","… y el que lo era [tukuyrikuq] en esta provincia, tenía su asiento en Vilcas, que es un tambo real…",178
 3036,"provincia",3,"T3104","Relación general de la disposición y calidad de la provincia de Guamanga, llamada San Joan de la Frontera…",176
 3036,"provincia",3,"T3105","El camino real … divide las poblaciones desta provincia...",177
@@ -111,12 +111,12 @@
 3036,"provincia",3,"T3110","… habiendo fecho llamamiento general de todos los caciques y principales desta dicha provincia…",180
 3037,"quipo",3,"T3111","… y ponía [el michuq] por quipo, que era su escritura dellos, en unos cordeles, haciendo unos nudos, todo lo que dejaba, en presencia del cacique de aquel pueblo…",179
 3037,"quipo",3,"T3112","… y dándolo [lo que era menester] por quipo se le recibía en cuenta.",179
-3038,"Quito ",3,"T3113","El  camino real que llaman de Guainacaba, que es partiendo de Quito por la sierra para ir al Cuzco y Charcas…",177
+3038,"Quito",3,"T3113","El  camino real que llaman de Guainacaba, que es partiendo de Quito por la sierra para ir al Cuzco y Charcas…",177
 3039,"reino",3,"T3114","Todas las chácaras de coca de todo el reino eran suyas [del Inga]…",179
-3040,"sementeras ",3,"T3115","… le hacían [al Inga] cierta cantidad de sementeras para su sustentación y la casa, cuando había necesidad…",178
+3040,"sementeras",3,"T3115","… le hacían [al Inga] cierta cantidad de sementeras para su sustentación y la casa, cuando había necesidad…",178
 3041,"suyos",3,"T3116","… e a cada un indio de los cuatro suyos, que ellos llaman, dos ovejas, una hembra y otra macho, para que criasen y se vistiesen…",177
 3042,"tambo",3,"T3117","… en el  tambo de Andaguailas.",176
-3043,"tambo ",3,"T3118","… y el que lo era [tukuyrikuq] en esta provincia, tenía su asiento en Vilcas, que es un tambo real…",178
+3043,"tambo",3,"T3118","… y el que lo era [tukuyrikuq] en esta provincia, tenía su asiento en Vilcas, que es un tambo real…",178
 3044,"tambos",3,"T3119","… y lo que dellas cogían lo encerraban en sus depósitos y a su tiempo lo llevaban a poner en los tambos de los caminos reales…",179
 3045,"teniente",3,"T3120","Cualquier delito que acontecía, en habiendo noticia dél, [el] gobernador o el teniente, hacían parecer ante sí al delincuente…",179
 3046,"tucuyrico",3,"T3121","… porque el tucuyrico proveía lo que quería…",178
