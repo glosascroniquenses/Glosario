@@ -20,7 +20,7 @@ layout: default
       {% assign unique_word_array = unique_word_string | split: ","%}
       <nav class="local" id="autores">
       {% for word in unique_word_array %}
-	<a href="#{{ word | downcase }}">{{ word }}</a>
+	<a href="#{{ word | downcase }} Mayor información">{{ word }}</a>
 	      </br>
       {% endfor %}
       </nav>
