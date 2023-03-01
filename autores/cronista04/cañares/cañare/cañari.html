@@ -1,0 +1,62 @@
+---
+layout: default
+title: cañares/cañare/cañari
+data: palabra04
+---
+<article>
+	
+<header>
+    <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista04/#{{ page.title | downcase }}" style="color:#750C41;">Juan de Betanzos</a></h2>
+</header>
+
+
+<div id="tables">
+	<h2><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista04/#{{ page.title | downcase }}" style="color:#750C41;">{{ page.title }}</a></h2>
+	
+
+</div>
+	
+{% if page.data %}
+	
+<div id="palabras2">
+      {% assign rows = site.data[page.data] %}
+	
+      {% capture unique_word_string %}{% for row in rows %}{% capture current_word %}{{ row.Palabra }}{% endcapture %}{% if current_word == saved_word %}{% else %}{{ row.Palabra }},{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}{% endfor %}{% endcapture %}
+	    
+      {% assign unique_word_array = unique_word_string % | split: ","%}
+      
+	{% for word in unique_word_array %}
+    
+        {% endfor %}
+     	
+</div>
+	
+<div id="tables">
+		
+    <table>
+          <thead>
+            <tr>
+              <th>Lengua</th>
+	      <th>Propuesta de pronunciación</th>
+              <th>Notas</th>
+            </tr>
+          </thead>
+      <tbody>
+     {% for row in rows %}
+          {% if row.Palabra == page.title %}
+            <tr>
+              <td>{{ row.Lengua }}</td>
+	      <td>{{ row.Propuesta }}</td>
+	      <td>{{ row.Notas }}</td>
+            </tr>
+          {% endif %}
+      {% endfor %}
+      
+      </tbody>
+    </table>
+
+</div>
+	
+{% endif %}
+    
+</article>
