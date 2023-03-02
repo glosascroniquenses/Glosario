@@ -31,6 +31,25 @@ layout: default
 	<section id="{{ word | downcase }}">		
         <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html"><b>{{ word }}</b>: <i>Mayor información</i> </a></h2>
 	<a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">Mayor información</a>
+	
+	<table>
+          <thead>
+            <tr>
+              <th>Pronunciación</th>
+	      <th>Lengua</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
+            <tr>
+              <td>{{ row.cita }}</td>
+	      <td valign="center">{{ row.pagina }}</td>		    
+            </tr>
+          {% endif %}
+          {% endfor %}
+      </tbody>
+    </table>
 		
 		
 	<table>
