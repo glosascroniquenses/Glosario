@@ -42,11 +42,10 @@ layout: default
           <tbody>
           {% for row in rows %}
           {% if row.Palabra == word %}
-		  {{ row.Palabra }}
-		  {% break %}
+
             <tr>
-              <td>{{ row.cita }}</td>
-	      <td valign="center">{{ row.pagina }}</td>		    
+              <td>{{ row.cita }}{% break %}</td>
+	      <td valign="center">{{ row.pagina }}{% break %}</td>		    
             </tr>
           {% endif %}
           {% endfor %}
