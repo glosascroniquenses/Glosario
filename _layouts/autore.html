@@ -29,14 +29,13 @@ layout: default
 <div id="tables">
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
-        <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html"><b>{{ word }}</b>: <i>Mayor información</i> </a></h2>
-	<a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">Mayor información</a>
+        <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html"><b>{{ word }}</b>
 	
 	<table>
           <thead>
             <tr>
               <th>Lengua</th>
-	      <th>Propuesta</th>
+	      <th>Propuesta de pronunciación</th>
 	      <th>Notas</th>	    
             </tr>
           </thead>
