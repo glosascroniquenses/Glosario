@@ -35,7 +35,7 @@ layout: default
           <thead>
             <tr>
               <th>Lengua</th>
-	      <th>Propuesta</th>
+	      <th>Propuesta de pronunciación</th>
 	      <th>Notas</th>	    
             </tr>
           </thead>
@@ -44,9 +44,9 @@ layout: default
           {% if row.Palabra == word %}
 
             <tr>
-              <td>{{ row.lengua }}</td>
- 	      <td>{{ row.propuesta }}</td>
-	      <td valign="center">{{ row.nota }}{% break %}</td>		    
+              <td>{{ row.pagina }}</td>
+ 	      <td>{{ row.pagina }}</td>
+	      <td valign="center">{{ row.pagina }}{% break %}</td>		    
             </tr>
           {% endif %}
           {% endfor %}
