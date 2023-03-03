@@ -26,24 +26,6 @@ layout: default
       </nav>
 </div>
 
-<div id="tables">
-      {% for word in unique_word_array %}
-	<section id="{{ word | downcase }}">		
-        <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
-
-			{% for row in rows %}
-			{% if row.Palabra == word %}
-          		{% if row.enlace == "sin datos" %}
-	  		<h2></h2>
-	   		{% else %}
-			<p><a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a></p>
-			{% endif %}
-			{% endif %}
-			{% endfor %}
-	{% endfor %}
-			
-</div>
-
 	</br>
 
 <div id="tables">
@@ -73,6 +55,19 @@ layout: default
           {% endfor %}
       </tbody>
     </table>
+</br>		
+		
+		<table>
+		{% for row in rows %}
+          	{% if row.Palabra == word %}
+			{% if row.enlace == "sin datos" %}
+	  		<h2></h2>
+	   		{% else %}
+			<p><a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a></p>
+			{% endif %}
+		 {% endif %}
+          	{% endfor %	
+		</table>
 	
 </br>
 
