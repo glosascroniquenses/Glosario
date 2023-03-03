@@ -52,9 +52,9 @@ layout: default
  	      <td>{{ row.propuesta }}</td>
 	      <td valign="center">{{ row.nota }}</td>
 		{% if row.enlace == "sin datos" %}
-                    <td>n.d.{% break %}</td>
+                    <td> -{% break %}</td>
                 {% else %}
-		    <td><p><a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a></p></td>
+		    <td><p><a href="{{ row.enlace }}">Ver Ficha léxica</a></p>{% break %}</td>
                 {% endif %}    
 		    
             </tr>
