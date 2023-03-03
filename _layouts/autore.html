@@ -30,19 +30,15 @@ layout: default
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
         <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
-	
-	   {% for row in rows %}	
-	   {% if row.enlace == "none" %}
 		
 	<table>
           <thead>
             <tr>
               <th>Lengua</th>
 	      <th>Propuesta de pronunciación</th>
-	      <th>Notas</th>
-	     </tr>
+	      <th>Notas</th>	    
+            </tr>
           </thead>
-		
           <tbody>
           {% for row in rows %}
           {% if row.Palabra == word %}
@@ -50,47 +46,12 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-              <td>{{ row.nota }}</td>
-	    </tr>
-          {% endif %}
-          {% endfor %}
-		    
-	    </tbody>
-          </table>	  
-		{% else %}
-			   
-		
-	<table>
-          <thead>
-            <tr>
-              <th>Lengua</th>
-	      <th>Propuesta de pronunciación</th>
-	      <th>Notas</th>
-	      <th>Ficha léxica</th>
-            </tr>
-          </thead>
-		
-          <tbody>
-          {% for row in rows %}
-          {% if row.Palabra == word %}
-
-            <tr>
-              <td>{{ row.lengua }}</td>
- 	      <td>{{ row.propuesta }}</td>
-              <td>{{ row.nota }}</td>
-	      <td>{{ row.enlace }}</td>
-	           
+	      <td valign="center">{{ row.notas }}{% break %}</td>		    
             </tr>
           {% endif %}
           {% endfor %}
-		  
-          </tbody>
-          </table>
-		  
-		{% endif %}
-		{% endfor %}
-		  
-  
+      </tbody>
+    </table>
 	
 </br>
 		
