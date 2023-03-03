@@ -48,7 +48,13 @@ layout: default
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
               <td>{{ row.nota }}</td>
-	      <td><a href="{{ row.enlace }}">Ver Ficha Léxica</a>{% break %}</td>		    
+	       {% if row.enlace %}
+	           <td><a href="{{ row.enlace }}">Ver Ficha Léxica</a>{% break %}</td>
+	       {% else %}
+		    <td>{% break %}</td>
+               {% endif %}
+		    
+		    
             </tr>
           {% endif %}
           {% endfor %}
