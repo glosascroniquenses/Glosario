@@ -25,7 +25,18 @@ layout: default
       {% endfor %}
       </nav>
 </div>
-	    
+
+<div id="tables">
+	{% for row in rows %}
+          {% if row.enlace == "sin datos" %}
+	  <h2></h2>
+	   {% else %}
+	  <h2>{{ row.enlace }}</h2>
+	{% endif %}
+	{% endfor %}
+	
+</div>
+
 <div id="tables">
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
