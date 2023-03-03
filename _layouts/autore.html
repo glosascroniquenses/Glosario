@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<article>
+    <header>
+    <h1><a href="{{ autore.url }}" style="color:#750C41;">{{ page.title }}</a></h1>
+    </header>
+    <p>{{ content }}</p>
+    <p><a href="https://glosascroniquenses.github.io/Glosario/intro/{{ page.data }}"  style="color: #333;" >Presentación de {{ page.title }}</a></p>
+    <p> Cómo citar:</p>
+    <p> GLOSAS CRONIQUENSES (1994-), {{ page.title }}. https://glosascroniquenses.github.io/Glosario/intro/{{ page.data }}. [Fecha de consulta: 24.11.2021]</p> 	
+    {% if page.data %}
+	
+<div id="palabras">
+	    
+      {% assign rows = site.data[page.data] %}
+
+      {% capture unique_word_string %}{% for row in rows %}{% capture current_word %}{{ row.Palabra }}{% endcapture %}{% if current_word == saved_word %}{% else %}{{ row.Palabra }},{% endif %}{% capture saved_word %}{{ current_word }}{% endcapture %}{% endfor %}{% endcapture %}
+
+      {% assign unique_word_array = unique_word_string | split: ","%}
+      <nav class="local" id="autores">
+      {% for word in unique_word_array %}
+	<a href="#{{ word | downcase }}">{{ word }}</a>
+	      </br>
+      {% endfor %}
+      </nav>
+</div>
+	    
+<div id="tables">
+      {% for word in unique_word_array %}
+	<section id="{{ word | downcase }}">		
+        <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}: Mayor información</a></h2>
+		
+
+		
+	<table>
+          <thead>
+            <tr>
+              <th>Cita</th>
+	      <th>Número de página</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
+            <tr>
+              <td>{{ row.cita }}</td>
+	      <td valign="center">{{ row.pagina }}</td>		    
+            </tr>
+          {% endif %}
+          {% endfor %}
+      </tbody>
+    </table>
+   
+		
+    </section>
+    {% endfor %}
+    
+</div>
+	
+    {% endif %}
+
+	
+</article>
