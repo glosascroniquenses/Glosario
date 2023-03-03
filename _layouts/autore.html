@@ -39,7 +39,8 @@ layout: default
             <tr>
               <th>Lengua</th>
 	      <th>Propuesta de pronunciación</th>
-	      <th>Notas</th>	    
+	      <th>Notas</th>
+	      <th>Ficha léxica</th>
             </tr>
           </thead>
           <tbody>
@@ -49,30 +50,20 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-	      <td valign="center">{{ row.nota }}{% break %}</td>		    
+	      <td valign="center">{{ row.nota }}{% break %}</td>
+		{% if row.enlace == "sin datos" %}
+                    <td></td>
+                {% else %}
+                    <td>{{ row.enlace }}</td>
+                {% endif %}    
+		    
             </tr>
           {% endif %}
           {% endfor %}
       </tbody>
     </table>
 </br>		
-		
-		<table>
-		{% for row in rows %}
-          	{% if row.Palabra == word %}
-			{% if row.enlace == "sin datos" %}
-	  		<h2></h2>
-	   		{% else %}
-			<p><a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a></p>
-			{% endif %}
-		 {% endif %}
-          	{% endfor %}	
-		</table>
-	
-</br>
-
-
-			
+					
 	<table>
           <thead>
             <tr>
