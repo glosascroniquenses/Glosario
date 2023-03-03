@@ -31,7 +31,31 @@ layout: default
 	<section id="{{ word | downcase }}">		
         <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
 		
+	<table>
+          <thead>
+            <tr>
+              <th>Lengua</th>
+	      <th>Propuesta de pronunciación</th>
+	      <th>Notas</th>	    
+            </tr>
+          </thead>
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
 
+            <tr>
+              <td>{{ row.lengua }}</td>
+ 	      <td>{{ row.propuesta }}</td>
+	      <td valign="center">{{ row.notas }}{% break %}</td>		    
+            </tr>
+          {% endif %}
+          {% endfor %}
+      </tbody>
+    </table>
+	
+</br>
+		
+		
 		
 	<table>
           <thead>
