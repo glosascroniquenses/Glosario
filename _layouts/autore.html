@@ -34,10 +34,12 @@ layout: default
         <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
 	
 			{% for row in rows %}
+			{% if row.Palabra == word %}
           		{% if row.enlace == "sin datos" %}
 	  		<h2></h2>
 	   		{% else %}
 	  		<h2>{{ row.enlace }}{% break %}</h2>
+			{% endif %}
 			{% endif %}
 			{% endfor %}
 		
