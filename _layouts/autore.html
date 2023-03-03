@@ -50,11 +50,11 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-	      <td valign="center">{{ row.nota }}{% break %}</td>
+	      <td valign="center">{{ row.nota }}</td>
 		{% if row.enlace == "sin datos" %}
-                    <td></td>
+                    <td>"n.d."{% break %}</td>
                 {% else %}
-                    <td>{{ row.enlace }}</td>
+                    <td>{{ row.enlace }}{% break %}</td>
                 {% endif %}    
 		    
             </tr>
