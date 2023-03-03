@@ -36,10 +36,11 @@ layout: default
           		{% if row.enlace == "sin datos" %}
 	  		<h2></h2>
 	   		{% else %}
-			<a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a>
+			<p><a href="{{ row.enlace }}{% break %}">Ver Ficha léxica</a></p>
 			{% endif %}
 			{% endif %}
 			{% endfor %}
+	{% endfor %}
 			
 </div>
 
