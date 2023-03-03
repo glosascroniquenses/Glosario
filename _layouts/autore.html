@@ -31,6 +31,34 @@ layout: default
 	<section id="{{ word | downcase }}">		
         <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
 		
+	   {% if row.enlace == "none" %}
+		
+	<table>
+          <thead>
+            <tr>
+              <th>Lengua</th>
+	      <th>Propuesta de pronunciación</th>
+	      <th>Notas</th>
+	     </tr>
+          </thead>
+		
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
+
+            <tr>
+              <td>{{ row.lengua }}</td>
+ 	      <td>{{ row.propuesta }}</td>
+              <td>{{ row.nota }}</td>
+	    </tr>
+          {% endif %}
+          {% endfor %}
+		    
+	    </tbody>
+          </table>	  
+		{% else %}
+			   
+		
 	<table>
           <thead>
             <tr>
@@ -40,6 +68,7 @@ layout: default
 	      <th>Ficha léxica</th>
             </tr>
           </thead>
+		
           <tbody>
           {% for row in rows %}
           {% if row.Palabra == word %}
@@ -48,18 +77,18 @@ layout: default
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
               <td>{{ row.nota }}</td>
-	       {% if row.enlace == "1" %}
-	           <td>1</td>
-	       {% else %}
-		    <td>0</td>
-               {% endif %}
-		    
-		    
+	      <td>{{ row.enlace }}</td>
+	           
             </tr>
           {% endif %}
           {% endfor %}
-      </tbody>
-    </table>
+		  
+          </tbody>
+          </table>
+		  
+		{% endif %}
+		  
+  
 	
 </br>
 		
