@@ -36,7 +36,8 @@ layout: default
             <tr>
               <th>Lengua</th>
 	      <th>Propuesta de pronunciación</th>
-	      <th>Notas</th>	    
+	      <th>Notas</th>
+	      <th>Ficha léxica</th>
             </tr>
           </thead>
           <tbody>
@@ -46,7 +47,8 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-	      <td>{{ row.nota }}{% break %}</td>		    
+              <td>{{ row.nota }}</td>
+	      <td><a href="{{ row.enlace }}">Ver Ficha Léxica</a>{% break %}</td>		    
             </tr>
           {% endif %}
           {% endfor %}
