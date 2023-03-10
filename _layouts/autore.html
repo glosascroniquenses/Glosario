@@ -20,7 +20,7 @@ layout: default
       {% assign unique_word_array = unique_word_string | split: ","%}
       <nav class="local" id="autores">
       {% for word in unique_word_array %}
-      {{ word }}
+      <a href="#{{ word | downcase }}">{{ word }}</a>
 	      </br>
       {% endfor %}
       </nav>
@@ -31,8 +31,7 @@ layout: default
 <div id="tables">
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
-        <h2><a href="https://glosascroniquenses.github.io/Glosario/autores/{{ page.data }}/{{ word }}.html">{{ word }}</a></h2>
-	
+        <h2>{{ word }}</h2>
 	
 	<table>
           <thead>
