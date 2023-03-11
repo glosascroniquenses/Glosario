@@ -65,8 +65,22 @@ layout: default
           {% endfor %}
       </tbody>
     </table>
-</br>		
-					
+</br>
+	
+{% for row in rows %}
+{% if row.Palabra == word %}
+	
+{% if row.enlace == "sin datos" %}
+	{% break %}
+{% else %}
+	<a href="{{ row.enlace }}">Ver Ficha léxica</a>{% break %}
+	{% endif %}
+	
+	
+{% endif %}
+{% endfor %}	
+	
+</br>	
 	<table>
           <thead>
             <tr>
