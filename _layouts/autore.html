@@ -73,14 +73,13 @@ layout: default
 {% if row.enlace == "sin datos" %}
 	{% break %}
 {% else %}
-	<a href="{{ row.enlace }}">Ver Ficha léxica</a>{% break %}
+	<h2><a href="{{ row.enlace }}" style="color: #750C41;">Ver Ficha léxica</a></h2>{% break %}
 	{% endif %}
-	
-	
 {% endif %}
 {% endfor %}	
 	
-</br>	
+</br>
+</br>
 	<table>
           <thead>
             <tr>
