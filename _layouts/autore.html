@@ -43,22 +43,14 @@ layout: default
               <th>Lengua</th>
 	      <th>Propuesta de pronunciación</th>
 	      <th>Notas</th>
-	      <th>Ficha léxica</th>
             </tr>
           </thead>
           <tbody>
           {% for row in rows %}
           {% if row.Palabra == word %}
-
             <tr>
               <td>{{ row.lengua }}</td>
- 	      <td>{{ row.propuesta }}</td>
-	      <td valign="center">{{ row.nota }}</td>
-		{% if row.enlace == "sin datos" %}
-                    <td> -{% break %}</td>
-                {% else %}
-		    <td><p><a href="{{ row.enlace }}">Ver Ficha léxica</a></p>{% break %}</td>
-                {% endif %}    
+ 	      <td>{{ row.propuesta }}</td>  
 		    
             </tr>
           {% endif %}
