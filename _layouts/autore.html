@@ -36,6 +36,13 @@ layout: default
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
         <h2>{{ word }}</h2>
+		
+{% for row in rows %}
+{% if row.Palabra == word %}	
+{% if row.lengua == "sin datos" %}
+{% break %}
+{% else %}
+		
 	
 	<table>
           <thead>
@@ -58,6 +65,11 @@ layout: default
           {% endfor %}
       </tbody>
     </table>
+		
+{% endif %}
+{% endif %}
+{% endfor %}		
+		
 </br>
 	
 {% for row in rows %}
