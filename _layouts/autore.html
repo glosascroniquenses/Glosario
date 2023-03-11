@@ -75,7 +75,7 @@ layout: default
 {% for row in rows %}
 {% if row.Palabra == word %}
 	
-{% if row.enlace == "sin datos" %}
+{% if row.enlace == "" %}
 	{% break %}
 {% else %}
 	<h2><a href="{{ row.enlace }}" style="color: #750C41;">Ver Ficha léxica</a></h2>{% break %}
@@ -84,7 +84,7 @@ layout: default
 {% endfor %}	
 	
 </br>
-</br>
+
 	<table>
           <thead>
             <tr>
