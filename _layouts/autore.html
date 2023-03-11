@@ -38,12 +38,23 @@ layout: default
         <h2>{{ word }}</h2>
 		
 {% for row in rows %}
+{% if row.Palabra == word %}
+{% if row.enlace == "sin datos" %}
+	{% break %}
+{% else %}
+	<h2><a href="{{ row.enlace }}" style="color: #750C41;">Ver Ficha léxica</a></h2>{% break %}
+{% endif %}
+{% endif %}
+{% endfor %}	
+</br>
+		
+		
+		
+{% for row in rows %}
 {% if row.Palabra == word %}	
 {% if row.lengua == "" %}
 {% break %}
-{% else %}
-		
-	
+{% else %}	
 	<table>
           <thead>
             <tr>
@@ -58,14 +69,12 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-	      <td>{{ row.nota }}{% break %}</td>
-		    
+	      <td>{{ row.nota }}{% break %}</td>  
             </tr>
           {% endif %}
           {% endfor %}
       </tbody>
-    </table>{% break %}
-		
+    </table>{% break %}	
 {% endif %}
 {% endif %}
 {% endfor %}		
