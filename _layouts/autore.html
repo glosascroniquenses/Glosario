@@ -114,12 +114,9 @@ layout: default
 {% for row in rows %}
 {% if row.Palabra == word %}
 	
-{% if row.lengua == "" %}
+{% if row.lengua == "sin datos" %}
 	PRUEBA
 {% else %}
-	
- 
-	
 	<table>
           <thead>
             <tr>
@@ -134,8 +131,7 @@ layout: default
             <tr>
               <td>{{ row.lengua }}</td>
  	      <td>{{ row.propuesta }}</td>
-	      <td>{{ row.nota }}{% break %}</td>
-		    
+	      <td>{{ row.nota }}{% break %}</td>    
             </tr>
           {% endif %}
           {% endfor %}
