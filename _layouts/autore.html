@@ -89,62 +89,10 @@ layout: default
             </tr>
           {% endif %}
           {% endfor %}
-      </tbody>
-    </table>
-   
-		
-    </section>
-    {% endfor %}
+          </tbody>
+   	</table>
+
     
 </div>
-	
-
-
-	
-
-
-
-</br>
-
-<div id="tables">
-      {% for word in unique_word_array %}
-	<section id="{{ word | downcase }}">		
-
-	
-{% for row in rows %}
-{% if row.Palabra == word %}
-	
-{% if row.lengua == "sin datos" %}
-	PRUEBA
-{% else %}
-	<table>
-          <thead>
-            <tr>
-              <th>Lengua</th>
-	      <th>Propuesta de pronunciación</th>
-	      <th>Notas</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for row in rows %}
-          {% if row.Palabra == word %}
-            <tr>
-              <td>{{ row.lengua }}</td>
- 	      <td>{{ row.propuesta }}</td>
-	      <td>{{ row.nota }}{% break %}</td>    
-            </tr>
-          {% endif %}
-          {% endfor %}
-      </tbody>
-    </table>	
 {% endif %}
-		
-{% endif %}
-{% endfor %}
-		
-</section>		
-{% endfor %}
-</div>
-
-    {% endif %}
 </article>
