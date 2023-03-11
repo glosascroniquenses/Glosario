@@ -39,7 +39,7 @@ layout: default
 		
 {% for row in rows %}
 {% if row.Palabra == word %}	
-{% if row.lengua == "sin datos" %}
+{% if row.lengua == "" %}
 {% break %}
 {% else %}
 		
@@ -75,7 +75,7 @@ layout: default
 {% for row in rows %}
 {% if row.Palabra == word %}
 	
-{% if row.enlace == "" %}
+{% if row.enlace == "sin datos" %}
 	{% break %}
 {% else %}
 	<h2><a href="{{ row.enlace }}" style="color: #750C41;">Ver Ficha léxica</a></h2>{% break %}
