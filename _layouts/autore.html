@@ -50,7 +50,8 @@ layout: default
           {% if row.Palabra == word %}
             <tr>
               <td>{{ row.lengua }}</td>
- 	      <td>{{ row.propuesta }}</td>  
+ 	      <td>{{ row.propuesta }}</td>
+	      <td>{{ row.nota }}{% break %}</td>
 		    
             </tr>
           {% endif %}
