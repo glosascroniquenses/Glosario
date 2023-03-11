@@ -46,8 +46,6 @@ layout: default
 {% endif %}
 {% endif %}
 {% endfor %}	
-</br>
-		
 		
 		
 {% for row in rows %}
@@ -78,21 +76,6 @@ layout: default
 {% endif %}
 {% endif %}
 {% endfor %}		
-		
-</br>
-	
-{% for row in rows %}
-{% if row.Palabra == word %}
-	
-{% if row.enlace == "sin datos" %}
-	{% break %}
-{% else %}
-	<h2><a href="{{ row.enlace }}" style="color: #750C41;">Ver Ficha léxica</a></h2>{% break %}
-	{% endif %}
-{% endif %}
-{% endfor %}	
-	
-</br>
 
 	<table>
           <thead>
