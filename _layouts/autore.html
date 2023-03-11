@@ -106,6 +106,9 @@ layout: default
 
 </br>
 
+<div id="tables">
+      {% for word in unique_word_array %}
+	<section id="{{ word | downcase }}">		
 
 	
 {% for row in rows %}
@@ -114,10 +117,8 @@ layout: default
 {% if row.lengua == "" %}
 	PRUEBA
 {% else %}
-	<div id="tables">
-      {% for word in unique_word_array %}
-	<section id="{{ word | downcase }}">		
-        <h2>{{ word }}</h2>
+	
+ 
 	
 	<table>
           <thead>
@@ -139,10 +140,12 @@ layout: default
           {% endif %}
           {% endfor %}
       </tbody>
-    </table>
-		{% endfor %}
-		</div>
-
-	{% endif %}
+    </table>	
 {% endif %}
-{% endfor %}	
+		
+{% endif %}
+{% endfor %}
+		
+</section>		
+{% endfor %}
+</div>
