@@ -32,14 +32,6 @@ layout: default
 
 	</br>
 
-
-{% for row in rows %}
-{% if row.Palabra == word %}
-	
-{% if row.lengua == "" %}
-	PRUEBA
-{% else %}
-	
 <div id="tables">
       {% for word in unique_word_array %}
 	<section id="{{ word | downcase }}">		
@@ -66,12 +58,6 @@ layout: default
           {% endfor %}
       </tbody>
     </table>
-</div>	
-
-	{% endif %}
-{% endif %}
-{% endfor %}	
-		
 </br>
 	
 {% for row in rows %}
@@ -87,7 +73,6 @@ layout: default
 	
 </br>
 </br>
-<div id="tables">
 	<table>
           <thead>
             <tr>
@@ -117,3 +102,47 @@ layout: default
 
 	
 </article>
+
+
+</br>
+
+
+	
+{% for row in rows %}
+{% if row.Palabra == word %}
+	
+{% if row.lengua == "" %}
+	PRUEBA
+{% else %}
+	<div id="tables">
+      {% for word in unique_word_array %}
+	<section id="{{ word | downcase }}">		
+        <h2>{{ word }}</h2>
+	
+	<table>
+          <thead>
+            <tr>
+              <th>Lengua</th>
+	      <th>Propuesta de pronunciación</th>
+	      <th>Notas</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row in rows %}
+          {% if row.Palabra == word %}
+            <tr>
+              <td>{{ row.lengua }}</td>
+ 	      <td>{{ row.propuesta }}</td>
+	      <td>{{ row.nota }}{% break %}</td>
+		    
+            </tr>
+          {% endif %}
+          {% endfor %}
+      </tbody>
+    </table>
+		{% endfor %}
+		</div>
+
+	{% endif %}
+{% endif %}
+{% endfor %}	
