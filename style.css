@@ -44,7 +44,7 @@ footer ul li {
 
 a {
     text-decoration: none;
-       
+    color: #333;   
 }
 a:hover {
     text-decoration: underline;
