@@ -6,11 +6,6 @@ title: Home
 <h1>Lista completa de términos</h1>
 </header>
 
-<form>
-   <input type="text" id="busqueda" placeholder="Buscar...">
-   <button type="submit" id="btn-buscar">Buscar</button>
-</form>
-
 
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista05/#[a]pos">[A]pos [Pedro de Cieza de León]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista03/#[tukuyrikuq]">[tukuyrikuq] [Damián de la Bandera]</a></p>
@@ -4891,13 +4886,4 @@ title: Home
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista09/#zumampa">Zumampa [Juan de Matienzo]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista21/#zungazapa">Zungazapa [Polo Ondegardo]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista01/#zunis">Zunis [Cristóbal de Albornoz]</a></p>
-
-const formulario = document.querySelector('form');
-const campoBusqueda = document.querySelector('#busqueda');
-
-formulario.addEventListener('submit', (e) => {
-   e.preventDefault();
-   const valorBusqueda = campoBusqueda.value.trim().toLowerCase();
-   //Aquí puedes agregar el código que procesa la búsqueda
-});
 
