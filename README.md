@@ -21,6 +21,14 @@ cronista14: Pedro Sarmiento de Gamboa
 cronista15: Agustín de Zárate
 cronista16: Martín Enríquez de Almansa
 cronista17: Bartolomé de Segovia
+cronista18:	Polo Ondegardo
+cronista19:	Fray Vicente de Valverde
+cronista20:	Cristóbal de Mena
+cronista21:	Polo Ondegardo
+cronista22:	Diego Dávila Brizeño
+cronista23:	Francisco Jerez
+cronista24:	Luis de Monzón
+cronista25:	Pedro Sancho
 
 _data: glosario tabulado en archivos csv
 "id_palabra","Palabra","id_cronista","id_texto","cita","pagina"
