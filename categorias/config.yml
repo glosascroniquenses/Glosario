@@ -20,4 +20,4 @@ defaults:
       path: ""
       type: autores
     values:
-      layout: categor
+      layout: autore
