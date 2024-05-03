@@ -1,0 +1,23 @@
+# Site Metadata
+title: "Glosas Croniquenses"
+program: ""
+url: ""
+baseurl: ""
+
+# Build Settings
+incremental: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+collections:
+  autores:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: autores
+    values:
+      layout: categor
