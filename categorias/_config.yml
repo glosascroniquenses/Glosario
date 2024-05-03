@@ -2,7 +2,7 @@
 title: "Glosas Croniquenses"
 program: ""
 url: ""
-baseurl: ""
+baseurl: "https://glosascroniquenses.github.io/Glosario/categorias/"
 
 # Build Settings
 incremental: true
@@ -17,7 +17,7 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "https://glosascroniquenses.github.io/Glosario/categorias/"
       type: autores
     values:
       layout: autore
