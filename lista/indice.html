@@ -4,7 +4,16 @@ title: Home
 ---
 <header>
 <h1>Lista completa de términos</h1>
+<input type="text" id="searchInput" onkeyup="filterTerms()" placeholder="Buscar palabras...">
 </header>
+
+<ul id="termsList">
+    <li><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista05/#[a]pos">[A]pos [Pedro de Cieza de León]</a></li>
+    <li><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista03/#[tukuyrikuq]">[tukuyrikuq] [Damián de la Bandera]</a></li>
+    <li><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista18/#aasaipata">Aasaipata [Polo Ondegardo]</a></li>
+    <li><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista05/#abancay">Abancay [Pedro de Cieza de León]</a></li>
+</ul>
+
 
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista05/#[a]pos">[A]pos [Pedro de Cieza de León]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista03/#[tukuyrikuq]">[tukuyrikuq] [Damián de la Bandera]</a></p>
@@ -5395,3 +5404,24 @@ title: Home
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista10/#çupay">çupay [Cristóbal de Molina]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista02/#ҫupai">Ҫupai [Bartolomé Álvarez]</a></p>
 <p><a href="https://glosascroniquenses.github.io/Glosario/autores/cronista02/#ҫupayo">Ҫupayo [Bartolomé Álvarez]</a></p>
+
+<script>
+function filterTerms() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("termsList");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
